@@ -1,0 +1,50 @@
+# Ignore Xcode related files
+**/dgph
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+**/*sync/
+.sconsign.dblite
+.tags*
+**/.vagrant/
+**/DerivedData/
+Icon?
+xcuserdata
+
+# Ignore CocoaPods related files
+**/Pods/
+**/.symlinks/
+
+# Ignore Flutter related files
+**/.generated/
+Flutter/App.framework
+Flutter/Flutter.framework
+Flutter/Flutter.podspec
+Flutter/Generated.xcconfig
+Flutter/ephemeral/
+Flutter/app.flx
+Flutter/app.zip
+Flutter/flutter_assets/
+Flutter/flutter_export_environment.sh
+ServiceDefinitions.json
+Runner/GeneratedPluginRegistrant.*
+
+# Ignore build directories
+F:/Android/androidproject 5/easy_cut_user/build
+/build/
+.dart_tool/
+
+# Ignore generated files
+Generated.xcconfig
+flutter_export_environment.sh
+.flutter-plugins-dependencies
+.flutter-plugins
+
+# Exceptions to above rules
+!default.mode1v3
+!default.mode2v3
+!default.pbxuser
+!default.perspectivev3
+F:\Android\androidproject 5\easy_cut_user\.dart_tool

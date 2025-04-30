@@ -1,0 +1,39 @@
+var myMap = {
+ "name": "Amr",
+ "age": 30,
+ "address": [
+    {
+        "country": "Egypt",
+        "city": "Menofia",
+    },
+ ],
+};
+
+class Person {
+ String? name;
+ int? age;
+ List<Address>? address;
+
+ Person({this.name, this.age, this.address});
+
+ Person.fromJson(Map<String, dynamic> json) {
+    name = json['name'];
+    age = json['age'];
+    if(json['address'] != null){
+        address = <Address>[];
+        (json['address'] as List).forEach((e){
+            address!.add(Address.fromJson(e));
+        });
+    }
+ }
+}
+
+/*
+<key>UIBackgroundModes</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+*/
